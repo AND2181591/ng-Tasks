@@ -1,0 +1,11 @@
+section div, form {
+    margin-bottom: 10px;
+}
+
+mat-form-field {
+    width: 250px;
+}
+
+button {
+    transition: background 1.8s;
+}

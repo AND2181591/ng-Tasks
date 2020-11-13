@@ -1,0 +1,11 @@
+mat-sidenav-container, mat-sidenav, mat-sidenav-content {
+    height: 100%;
+}
+
+mat-sidenav {
+    width: 200px;
+}
+
+mat-spinner {
+    margin: auto;
+}

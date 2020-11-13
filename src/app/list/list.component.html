@@ -1,0 +1,13 @@
+<app-view-list 
+    *ngIf="currentList.title"
+    [list]="currentList"
+    [fntColor]="fontColor"
+    (task)="onNewTask($event)">
+</app-view-list>
+
+<app-task-list 
+        *ngIf="currentList.list != null && currentList.list.length > 0"
+        [list]="currentList"
+        (taskChecked)="onTaskChecked($event)"
+        (deleteRequest)="onDeleteRequest($event)">
+</app-task-list>

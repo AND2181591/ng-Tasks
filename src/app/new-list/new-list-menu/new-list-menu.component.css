@@ -1,0 +1,13 @@
+h2 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+mat-dialog-content {
+    height: 340px;
+}
+
+input:focus {
+    outline: none;
+}

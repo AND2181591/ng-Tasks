@@ -1,0 +1,48 @@
+mat-toolbar {
+    transition: background 1.8s;
+}
+
+mat-icon {
+    width: 35px;
+    height: 35px;
+    padding: 5.8px;
+    border-radius: 50%;
+}
+
+.mat-icon-animate {
+    animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+    0% {
+        background: transparent;
+    }
+    50% {
+        background: #e3e3e3;
+    }
+    100% {
+        background: transparent;
+    }
+}
+
+.main-title {
+    padding-left: 3rem;
+}
+
+.mat-title {
+    margin: 0;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.navigation-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}

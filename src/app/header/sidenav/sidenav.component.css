@@ -1,0 +1,16 @@
+.list-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.sidenav-caption {
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+.dot-menu {
+    cursor: pointer;
+    margin-right: 10px
+}

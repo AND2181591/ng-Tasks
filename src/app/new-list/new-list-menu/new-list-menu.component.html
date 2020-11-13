@@ -1,0 +1,52 @@
+<h2 mat-dialog-title>List Name</h2>
+<mat-dialog-content>
+
+    <form
+        #f="ngForm"
+        (ngSubmit)="onSubmit(f, color)"
+        fxLayout="column"
+        fxLayoutAlign="center center"
+        fxLayoutGap="2px">
+        <mat-form-field>
+            <input 
+                class="name-field"
+                type="text"
+                matInput
+                placeholder="Let's give it a name..."
+                ngModel
+                name="listname"
+                required
+                #nameInput>
+            <mat-error *ngIf="!nameInput.value?.length">Field cannot be empty</mat-error>
+        </mat-form-field>
+
+
+        <span
+            [style.background]="color"
+            [cpToggle]="true"
+            [cpDialogDisplay]="'inline'"
+            [cpDisableInput]="true"
+            [cpHeight]="'200px'"
+            [(colorPicker)]="color"
+            (colorPickerSelect)="color">
+        </span>
+
+        <mat-dialog-actions>
+            <button
+                type="submit"
+                mat-raised-button
+                color="primary"
+                [disabled]="!f.valid">
+                Save
+            </button>
+            <button
+                type="button"
+                mat-raised-button
+                color="warn"
+                (click)="onClose()">
+                Cancel
+            </button>
+        </mat-dialog-actions>
+    </form>
+
+</mat-dialog-content>

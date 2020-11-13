@@ -1,0 +1,30 @@
+<mat-list
+    cdkDropList 
+    (cdkDropListDropped)="drop($event)"
+    class="task-list">
+    <mat-list-item
+        #task
+        class="task-box"
+        *ngFor="let item of list.list; let i = index"
+        cdkDrag>
+        <mat-menu #itemMenu="matMenu">
+            <button mat-menu-item (click)="onDelete(i)">Delete</button>
+        </mat-menu>
+
+        <div class="task-box-inner">
+            <div class="task-name">
+                <mat-icon [matMenuTriggerFor]="itemMenu">more_vert</mat-icon>
+                <p [ngClass]="{checked: item.completed}">
+                    {{ item.task }}
+                </p>
+            </div>
+
+            <mat-checkbox 
+                #ckBox 
+                color="warn"
+                (change)="onTaskChecked(i, ckBox.checked)"
+                [checked]="item.completed">
+            </mat-checkbox>
+        </div>
+    </mat-list-item>
+</mat-list>

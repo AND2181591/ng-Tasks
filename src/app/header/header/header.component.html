@@ -1,0 +1,29 @@
+<mat-toolbar 
+    [ngStyle]="getColorStyles()"
+    class="mat-display-1">
+    <button 
+        mat-icon-button
+        (click)="onSidenavToggle()">
+        <mat-icon [ngClass]="{'mat-icon-animate': iconAnimate === true}">menu</mat-icon>
+    </button>
+    <div class="main-title">Tasks</div>
+
+    <div 
+        class="mat-title"
+        fxFlex
+        fxLayout
+        fxLayoutAlign="flex-end center"
+        fxHide.xs>
+        <ul 
+            fxLayout
+            fxLayoutGap="10px"
+            class="navigation-items">
+            <li>
+                <a 
+                    [ngStyle]="{color: fontColor}" 
+                    routerLink="/new-list">New List</a>
+            </li>
+        </ul>
+    </div>
+
+</mat-toolbar>

@@ -1,0 +1,39 @@
+<section>
+
+    <div 
+        class="mat-display-1"
+        fxLayout
+        fxLayoutAlign="center">
+        {{ list.title }}
+    </div>
+
+    <form 
+        #f="ngForm" 
+        (ngSubmit)="onSubmit(f)"
+        fxLayout="column"
+        fxLayoutAlign="center center"
+        fxLayoutGap="4px">
+        <mat-form-field>
+            <input 
+                type="text"
+                matInput
+                placeholder="Add a task..."
+                ngModel
+                name="task"
+                required
+                #taskInput>
+            <mat-error *ngIf="!taskInput.value.length">Field cannot be empty</mat-error>
+        </mat-form-field>
+
+        <button 
+            mat-raised-button 
+            [ngStyle]="getColorStyles()"
+            type="submit"
+            [disabled]="!f.valid">
+            Add Task
+        </button>
+
+    </form>
+    
+</section>
+
