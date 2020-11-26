@@ -14,3 +14,12 @@
     cursor: pointer;
     margin-right: 10px
 }
+
+/* .dark-mode {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 15vh;
+    width: 190px;
+    background: #fff;
+} */

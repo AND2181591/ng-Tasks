@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>{{ title }}</h2>
+<mat-dialog-content class="mat-typography">
+    <p>Are you sure you want to delete?</p>
+</mat-dialog-content>
+<!-- <h3 class="mat-typography">Are you sure you want to delete {{ title }}?</h3> -->
+
+<mat-dialog-actions fxLayout="row" fxLayoutAlign="center">
+    <button mat-raised-button color="warn" (click)="onClose(true)">Delete</button>
+    <button mat-raised-button color="primary" (click)="onClose(false)">Cancel</button>
+</mat-dialog-actions>

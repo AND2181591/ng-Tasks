@@ -12,7 +12,6 @@ html { font-size: 62.5%; }
 
 body { 
     margin: 0; 
-    /* padding: 2rem; */
     box-sizing: border-box; 
     font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
@@ -24,3 +23,14 @@ body {
     width: 280px;
     overflow: hidden;
 }
+
+/* .mat-drawer-inner-container {
+    max-height: 80vh;
+}
+
+.new-list .mat-list-item-content {
+    background: #fff!important;
+    position: fixed!important;
+    z-index: 1!important;
+    width: 200px;
+} */

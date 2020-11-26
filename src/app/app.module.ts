@@ -20,6 +20,7 @@ import { NewListModule } from './new-list/new-list.module';
 import { SharedModule } from './shared/shared.module';
 
 import { environment } from '../environments/environment';
+import { ConfirmDialogComponent } from './header/sidenav/confirm-dialog/confirm-dialog.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { environment } from '../environments/environment';
     WelcomeComponent,
     WelcomeDialogComponent, 
     HeaderComponent, 
-    SidenavComponent
+    SidenavComponent, ConfirmDialogComponent
   ],
   imports: [
     AppRoutingModule, 

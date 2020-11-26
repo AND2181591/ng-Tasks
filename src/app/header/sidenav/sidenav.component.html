@@ -1,6 +1,8 @@
 <mat-nav-list>
+    
     <a 
         mat-list-item
+        class="new-list"
         routerLink="/new-list" 
         (click)="onSidenavClose()">
         <mat-icon>add_circle</mat-icon>
@@ -12,7 +14,7 @@
         class="list-title"
         *ngFor="let list of createdLists; let i = index">
         <mat-menu #itemMenu="matMenu">
-            <button mat-menu-item (click)="onDelete(i)">Delete</button>
+            <button mat-menu-item (click)="onDelete(i, list.title)">Delete</button>
         </mat-menu>
 
         <a (click)="onListSelect(i)" mat-list-item>
@@ -25,4 +27,13 @@
             more_vert
         </mat-icon>
     </div>
+
+    <!-- <div class="dark-mode">
+        <mat-slide-toggle
+            mat-list-item
+            class="sidenav-caption"
+            (change)="onDarkModeToggle($event)">
+            Dark Mode
+        </mat-slide-toggle>
+    </div> -->
 </mat-nav-list>

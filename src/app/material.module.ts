@@ -15,6 +15,7 @@ import { MatCardModule } from '@angular/material/card';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
         MatCardModule, 
         DragDropModule, 
         MatMenuModule, 
-        MatProgressSpinnerModule
+        MatProgressSpinnerModule, 
+        MatSlideToggleModule
     ], 
     exports: [
         MatDialogModule, 
@@ -50,7 +52,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
         MatCardModule, 
         DragDropModule, 
         MatMenuModule, 
-        MatProgressSpinnerModule
+        MatProgressSpinnerModule, 
+        MatSlideToggleModule
     ], 
     providers: []
 })
